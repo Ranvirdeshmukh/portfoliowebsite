@@ -11,18 +11,17 @@
     
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-    </body>
+    
 
-    <section id="home">
+    <section id="home" class ="intro-section">
         <header>
             <h1>Welcome to My Portfolio</h1>
             <p>Hello! I'm Ranvir, a student/founder/software developer/web designer.(i am currently just using / to differentiate these words but while using the css for next part, i will add the feature where one will appear after another)
@@ -30,12 +29,12 @@
         </header>
     </section>
 
-    <section id="about">
+    <section id="about" class = "about-section">
         <h2>About Me</h2>
         <p>I am extrmely interesting in solving real world problems and making a positive impact in the community and society I live. </p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio-section">
         <h2>My Work</h2>
         <ul>
         <article>
@@ -61,7 +60,7 @@
         <!-- Will add more projects -->
     </section>
     
-    <section id="Linkedin resume">
+    <section id="Linkedin resume" class="Resume-section">
         <h2>My linkedin Resume</h2>
         <p>If you're interested in my professional background and experiences, please take a look at my resume. I have detailed my skills, work history, and educational background to provide a comprehensive view of my professional journey.</p>
         <a href="https://www.linkedin.com/in/ranvir-deshmukh-209706199/" target="_blank">Download My Resume</a>
@@ -69,7 +68,7 @@
 
     
     <!-- got the inspiration for this from one of the templates on landing folio and took some help from internet and googledevchrome to write this code-->
-    <section id="expectations">
+    <section id="expectations" class="expectations-section">
         <h2>Here's what you can expect from me...</h2>
         <div class="expectation-block" style="background-color: #8AB0AB;">
             <p>I'll bring color, big energy and fresh thinking.</p>
@@ -82,30 +81,38 @@
         </div>
         <div class="expectation-block" style="background-color: #D968B7;">
             <p>Recognize potential — pushing people to ...</p>
+         <!-- Expectation blocks will be styled in CSS later -->
+
         </div>
     </section>
 
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email">
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your message"></textarea>
-            
-            <button type="submit">Submit</button>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
         </form>
     </section>
 
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2024 Ranvir Deshmukh. All rights reserved.</p>
     </footer>
+
+    </body>
+    
     
     
 
