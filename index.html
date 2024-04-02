@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ranvir's Portfolio website.</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
 
     </head>
 
@@ -12,6 +17,7 @@
 
     <body>
         <nav id="main-nav">
+            <img src="mEme-13.jpg" alt="Logo" class="logo">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -21,70 +27,89 @@
         </nav>
     
 
-    <section id="home" class ="intro-section">
-        <header>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm Ranvir, a student/founder/software developer/web designer.(i am currently just using / to differentiate these words but while using the css for next part, i will add the feature where one will appear after another)
-            Welcome to my portfolio website!</p>
-        </header>
-    </section>
+        <section id="home" class="intro-section">
+            <div class="left-side">
+              <header>
+                <h1>Hi,</h1>
+                <p><i>I am a</i></p>
+              </header>
+            </div>
+            <div class="right-side">
+              <header>
+                <h1>I am Ranvir.</h1>
+                <p class="typewriter-text">student,founder,software developer,web designer.</p>
+              </header>
+            </div>
+            
+            
+          </section>
+          
+          
+          <section id="about" class="about-section">
+            <div class="image-container">
+                <img src="ranvirpic1.png" alt="Ranvir's Image" class="parallax-image">
+            </div>
+            <div class="text-container">
+                <h2>About Me.</h2>
+                <p>I am extremely interesting in solving real-world problems and making a positive impact in the community and society I live in.</p>
+            </div>
+        </section>
+        
+        
+        
 
-    <section id="about" class = "about-section">
-        <h2>About Me</h2>
-        <p>I am extrmely interesting in solving real world problems and making a positive impact in the community and society I live. </p>
-    </section>
-
-    <section id="portfolio" class="portfolio-section">
-        <h2>My Work</h2>
-        <ul>
-        <article>
-            <li><h3>Meme Me, Inc</h3>
-            <p>Driving vision and growth for an innovative social media startup, reshaping humor-sharing and community connections. App launching at Dartmouth in 2024.
-                -Developed an iOS app for a Tuck School of Business award-winning social media startup using Xcode and Firebase.
-                -Constructed user authentication, profile management, image posting, feed, user search, follow system, post deletion,refresh control, post rate limiting,
-                 complex user interface, real-time database, and more using Swift programming language in Xcode..</p>
-            <a href="https://www.mememe.tech">Meme Me Website</a>
-            </li>
-        </article>
-        <article>
-            <li><h3>Senator in Dartmouth Student Government </h3>
-            <p> Elected for 2nd consecutive term.
-                -Student Elected Senator from South House in the Dartmouth Student Government.
-                -Communications Director in Student Government.
-                -As the official student government spanning all year levels, we represent student concerns to the administration and outside community groups, whether that’s
-                 around mental health, dining and food insecurity, elections, or infrastructure and housing. We also manage a $61,000 dollar budget directed towards various initiatives. Any issue affecting the quality of undergraduate life or education falls within the jurisdiction of DSG..</p>
-            <a href="https://sg.dartmouth.edu/executives">DSG wesbite</a>
-            </li>
-        </article>
-        </ul>
-        <!-- Will add more projects -->
-    </section>
-    
-    <section id="Linkedin resume" class="Resume-section">
-        <h2>My linkedin Resume</h2>
-        <p>If you're interested in my professional background and experiences, please take a look at my resume. I have detailed my skills, work history, and educational background to provide a comprehensive view of my professional journey.</p>
-        <a href="https://www.linkedin.com/in/ranvir-deshmukh-209706199/" target="_blank">Download My Resume</a>
-    </section>
-
-    
+        
+        <section id="portfolio" class="portfolio-section">
+            <h2>My Work.</h2>
+            <div class="portfolio-item item-1">
+                <!-- Top Box Content -->
+                <div class="content">
+                    <img src="mEme-11.png" alt="Meme Me Logo" class="meme-me-logo">
+                    <h3>Meme Me, Inc</h3>
+                    <p>Driving vision and growth for an innovative social media startup, reshaping humor-sharing and community connections. App launching at Dartmouth in Spring 2024.</p>
+                    <a href="https://www.mememe.tech">Meme Me Website</a>
+                </div>
+                <div class="media">
+                    <video controls width="100%">
+                        <source src="kite-export.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="portfolio-item item-2">
+                <!-- Bottom Box Content -->
+                <div class="content">
+                    <h3>My LinkedIn Resume</h3>
+                    <p>If you're interested in my professional background and experiences, please take a look at my resume. I have detailed my skills, work history, and educational background to provide a comprehensive view of my professional journey.</p>
+                    <a href="https://www.linkedin.com/in/ranvir-deshmukh-209706199/" target="_blank">My Resume</a>
+                </div>
+            </div>
+        </section>
+        
+        
     <!-- got the inspiration for this from one of the templates on landing folio and took some help from internet and googledevchrome to write this code-->
     <section id="expectations" class="expectations-section">
         <h2>Here's what you can expect from me...</h2>
-        <div class="expectation-block" style="background-color: #8AB0AB;">
+        <div class="expectation-block" style="flex: 2; background-color: #8AB0AB;">
             <p>I'll bring color, big energy and fresh thinking.</p>
         </div>
-        <div class="expectation-block" style="background-color: #B7D968;">
+        <div class="expectation-block" style="flex: 3; background-color: #B7D968;">
             <p>Learn, challenge and reconnect the dots — joining your team with conviction and openness.</p>
         </div>
-        <div class="expectation-block" style="background-color: #68B7D9;">
+        <div class="expectation-block" style="flex: 1; background-color: #68B7D9;">
             <p>Bridge the gap between creative and ...</p>
         </div>
-        <div class="expectation-block" style="background-color: #D968B7;">
+        <div class="expectation-block" style="flex: 2; background-color: #D968B7;">
             <p>Recognize potential — pushing people to ...</p>
-         <!-- Expectation blocks will be styled in CSS later -->
-
+        </div>
+        <div class="expectation-block" style="flex: 3; background-color: #E0B0FF;">
+            <p>Empower teams to deliver their best work.</p>
+        </div>
+        <div class="expectation-block" style="flex: 1; background-color: #FFD700;">
+            <p>Drive innovation and foster continuous improvement.</p>
         </div>
     </section>
+    
 
 
     <section id="contact" class="contact-section">
@@ -112,7 +137,7 @@
     </footer>
 
     </body>
-    
+
     
     
 
