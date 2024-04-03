@@ -14,6 +14,10 @@
     color: #333;
     background-color: #f4f4f4;
   }
+
+  html {
+    scroll-behavior: smooth; 
+  }
   
   #main-nav {
     display: flex;
@@ -22,11 +26,13 @@
     padding: 1em 3em;
     background: transparent; 
     color: #333;
-    position: absolute; 
-    width: 100%; 
+    position: fixed; 
     top: 0;
     z-index: 10;
     font-family: 'Source Code Pro', monospace; 
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s; /
 }
 
 .logo {
@@ -43,7 +49,7 @@
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #9101ff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -51,6 +57,8 @@
 .nav-link:hover {
     color: #f4f4f4;
 }
+
+
 
 /* Intro Section Styling */
 .intro-section {
@@ -626,19 +634,36 @@
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/******************************************** media query ***********************************/
+@media only screen and (max-width: 768px) {
+    .expectation-row {
+        flex-direction: column; /* Stack blocks vertically */
+    }
+
     .expectation-block {
-        width: 45%; /* Blocks take more space on smaller screens */
-        margin: 2.5%; /* Increase margin for better spacing on smaller screens */
+        /* Full width for each block for easier touch interaction and visibility */
+        flex: 0 0 100%;
+        margin: 0.5em 0; /* Adjust margins for vertical stacking */
+    }
+
+    /* Adjust heading and other elements as necessary */
+    .expectations-section h2 {
+        font-size: 60px; /* Smaller font size for the heading */
+        margin-top: 1em; /* More space at the top */
+        text-align: center; /* Center-align the heading */
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .expectations-section h2 {
+        font-size: 50px; /* Even smaller font size */
+    }
+
+    /* Adjust block padding and font sizes if necessary */
     .expectation-block {
-        display: block; /* Stack blocks vertically on the smallest screens */
-        width: 90%; /* Blocks take full width minus margin */
-        margin: 5% auto; /* Center blocks with automatic horizontal margins */
+        padding: 0.5em;
+        font-size: 0.9em; /* Slightly smaller text for better fit */
     }
 }
 
