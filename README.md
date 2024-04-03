@@ -11,5 +11,9 @@ Deployed URL : https://ranvirlandingpage.onrender.com/
 ## What Worked Well
 For me , I think everything in part-1 went well and I am extremely happy to take this class.
 
+# Extra credit
+I have done the extra credit by adding a CSS animation to my page of the typewriter's effect. It usually requires
+javascript to enable to the typing effect but i watched some youtube video to mae it work with just CSS. Also, i added animation to of my image sliding in the screen on about page. Also, added a alot of interesting features for the shadow effect on the blocks.
 
+#
 
