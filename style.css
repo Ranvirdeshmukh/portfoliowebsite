@@ -56,7 +56,7 @@
 .intro-section {
     display: flex;
     min-height: 100vh;
-    
+    ;
 }
 
 .left-side, .right-side {
@@ -73,12 +73,12 @@
 }
 
 .left-side {
-    flex: 2.2;
+    flex: 2.23;
     background-color: #fff;
 }
 
 .right-side {
-    flex: 1.79;
+    flex: 1.77;
     background-color: #000;
 }
 
@@ -112,8 +112,7 @@
 .typewriter-text {
     overflow: hidden; /* Hides overflow text */
     white-space: nowrap; /* Ensure the text stays in a single line */
-    animation: typing 8s steps(44) 1s forwards,
-               blink-caret .6s step-end infinite; /* Keep the cursor blinking */
+    animation: typing 6s steps(44) 1s forwards, blink-caret .6s step-end infinite; /* Keep the cursor blinking */
 }
 
 /* Adjust the typing animation to include the cursor */
@@ -154,7 +153,65 @@
     margin-right: 20px;
   }
 
+/***************************** Media query for intro section *************************/
 
+
+
+@media only screen and (max-width: 1280px) {
+    .intro-section p {
+      font-size: 5em; /* Smaller font size for laptop screens */
+    }
+  }
+  
+  /* Adjustments for mobile devices */
+  @media only screen and (max-width: 640px) {
+    .intro-section {
+      flex-direction: column; /* Stack sections vertically */
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .intro-section p,
+    .typewriter-text {
+      font-size: 2.5em; /* Further reduce font size for mobile */
+      margin: 0; /* Remove horizontal margin */
+      text-align: center; /* Center-align text */
+    }
+  
+    .left-side, .right-side {
+      align-items: center; /* Center content for left and right sections */
+      padding: 1em; /* Reduce padding */
+    }
+  
+    .left-side header, .right-side header {
+      text-align: center; /* Center-align header text */
+    }
+    
+    /* Adjust typewriter animation to fit the mobile viewport */
+    .typewriter-text {
+      overflow: hidden;
+      white-space: nowrap;
+      display: block; /* Ensure full width */
+      width: 100%; /* Force full width */
+      border-right: 0.15em solid black; /* Maintain cursor */
+    }
+  
+    /* Adjust keyframe animations for mobile */
+    @keyframes typing {
+      from { 
+        width: 0; 
+      }
+      to { 
+        width: 100%; 
+      }
+    }
+  
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
+    
+  }
   
   
 
@@ -231,20 +288,41 @@
 
 
 
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        height: auto; /* Adjust height for smaller screens to fit content */
+/***************************** Media query for about section *************************/
+
+@media (max-width: 1280px) {
+    .text-container h2 {
+        font-size: 70px; /* Slightly smaller for less screen width */
     }
-    .image-container, .text-container {
-        width: 100%; /* Full width for smaller screens */
-    }
-    .image-container img {
-        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    
+    .text-container p {
+        font-size: 18px; /* Slightly smaller for better fit */
+        max-width: 500px;
     }
 }
 
-
+/* Small Screens: Adjustments for mobile devices, under 768px width */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        height: auto; /* Adjust height as content stacks vertically */
+    }
+    
+    .image-container, .text-container {
+        width: 100%; /* Full width for stacked layout */
+        padding: 1em; /* Adjust padding for smaller screen */
+    }
+    
+    .text-container h2 {
+        font-size: 40px; /* Much smaller font size for mobile */
+        margin: 0.5em 0; /* Adjust margins for tighter spacing */
+    }
+    
+    .text-container p {
+        font-size: 16px; /* Smaller font size for mobile */
+        max-width: none; /* Allow text to fill container width */
+    }
+}
 
 
 
@@ -636,6 +714,5 @@
       flex-basis: 90%;
     }
     
-    /* Other responsive styles */
   }
   
