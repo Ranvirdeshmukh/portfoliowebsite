@@ -20,10 +20,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
-    background: transparent; /* Make nav background transparent */
+    background: transparent; 
     color: #333;
-    position: absolute; /* Position nav absolutely within the viewport */
-    width: 100%; /* Ensure nav spans entire width */
+    position: absolute; 
+    width: 100%; 
     top: 0;
     z-index: 10;
     font-family: 'Source Code Pro', monospace; 
@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; /* Align items to the start for the left side */
-    padding: 1em;
+    padding: 2em;
 }
 
 .right-side {
@@ -73,18 +73,18 @@
 }
 
 .left-side {
-    flex: 2.27;
+    flex: 2.2;
     background-color: #fff;
 }
 
 .right-side {
-    flex: 1.73;
+    flex: 1.79;
     background-color: #000;
 }
 
 .intro-section h1  {
-    margin: 0 20px; /* Add horizontal margin for breathing space */
-    font-size: 7.5em; /* Explicitly large font size for h1 */
+    margin: 0 20px; 
+    font-size: 7.5em; 
     font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
 }
 
@@ -255,7 +255,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
     background-color: #f3f3f3;
     padding: 4em 1em;
 }
@@ -345,12 +345,12 @@
 }
 
 .media video {
-    position: absolute; /* Position the video absolutely within .media */
-    left: 50%; /* Start at the center of the container */
-    transform: translateX(-385px); /* Move it to the left by half its width to start from the center */
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-385px); 
     width: 770px; /* Set video width */
     height: 620px; /* Set video height */
-    object-fit: cover; /* Cover the frame without losing aspect ratio */
+    object-fit: cover;
 }
 
 
@@ -409,6 +409,13 @@
     }
 }
 
+.portfolio-section {
+    margin-bottom: 10px; /* Or a small value like 10px if you want a tiny space */
+}
+
+.expectations-section {
+    margin-top: 10px; /* Or the smallest value needed to achieve the desired spacing */
+}
 
 
 .expectations-section {
@@ -416,51 +423,130 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1500px; /* Fixed width */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-    height: 1000px; /* Fixed height */
-    margin: auto; /* Center the section within the viewport */
-    padding: 1em ; /* Add padding to the section */
-    background-color: #f3f3f3; /* Background color for the entire section */
+    width: 1000px; /* Adjusted total width */
+    max-width: 100%; /* Prevents overflow */
+    height: 1300px; /* Total height */
+    margin: auto;
+    padding: 1em;
+    background-color: #f3f3f3;
 }
 
-.expectations-section h2 {
-    /* Fallback color if gradients are not supported */
-    color: #333;
-    /* Gradient background */
-    background: -webkit-linear-gradient(left, #d93fff, #f940bc 30%, #f03540 71%, #fedb10);
-    background: linear-gradient(to right, #d93fff, #f940bc 30%, #f03540 71%, #fedb10);
-    /*used chat gpt to get this gradient font.*/
-    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
 
+
+
+.expectations-section h2 {
+    color: #333;
+    background: linear-gradient(to right, #d93fff, #f940bc 30%, #f03540 71%, #fedb10);
+    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     font-size: 80px;
     font-weight: bold;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     letter-spacing: -1.5px;
 }
-
-
-.expectation-block {
-    display: inline-block; /* Display blocks side by side */
-    width: 20%; /* Set the width of each block */
-    margin: 1%; /* Add some margin between blocks */
-    padding: 1em; /* Padding inside the blocks */
-    border-radius: 8px; /* Rounded corners for the blocks */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    color: #fff; /* Text color */
-    font-size: 1em; /* Font size for the text inside blocks */
-    font-weight: bold; /* Make the text bold */
+.expectations-section h2 {
+    margin-top: 0; /* Removes the top margin from the heading */
 }
 
-/* Individual background colors for each block */
-.expectation-block:nth-child(1) { background-color: #8AB0AB; }
-.expectation-block:nth-child(2) { background-color: #B7D968; }
-.expectation-block:nth-child(3) { background-color: #68B7D9; }
-.expectation-block:nth-child(4) { background-color: #D968B7; }
+
+
+.expectation-row {
+    display: flex;
+    justify-content: space-between; /* This will create the gap between the blocks */
+    align-items: center; /* This will align items vertically in the center */
+    width: 100%; /* Full width of the expectations-section */
+    height: 300px; /* Fixed height for the row */
+}
+
+.expectation-block {
+    padding: 1em;
+    border-radius: 8px;
+    /* Use a stronger shadow with less spread for the base state to ensure visibility */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Enhanced visibility on white */
+    color: #000000;
+    font-size: 1.5em;
+    height: calc(100% - 2em);
+    font-family: 'Source Code Pro', monospace;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.expectation-row {
+    margin-bottom: -25px; /* Adjust this value to reduce/increase the gap */
+}
+
+/* Optional: remove bottom margin from the last row */
+.expectations-section .expectation-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Hover state */
+.expectation-block:hover {
+    transform: translateY(-10px) scale(1.05); /* Lifts the block and slightly enlarges it */
+    /* Brighter and more pronounced shadow on hover */
+    box-shadow: 0 12px 24px rgba(117, 5, 255, 0.5); /* Increased opacity for more visible shadow */
+}
+.expectation-block:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 165, 0, 0.5); /* Orange shadow with increased visibility */
+}
+
+.expectation-block.three-tenths {
+    flex: 0 0 30%;
+    margin-right: 0.5%; /* Half of the total gap you want between blocks */
+    background-color: #8AB0AB;
+}
+
+.expectation-block.seven-tenths {
+    flex: 0 0 70%;
+    margin-left: 0.5%; /* Half of the total gap you want between blocks */
+    background-color: #B7D968;
+}
+
+/* Assuming a total of 10px gap (5px on each side of the gap between two blocks) in a 1000px container */
+.expectation-block.three-tenths {
+    flex: 0 0 calc(30% - 5px); /* Adjusted for 1000px width */
+    background-color: #8AB0AB;
+}
+
+.expectation-block.seven-tenths {
+    flex: 0 0 calc(70% - 5px); /* Adjusted for 1000px width */
+    background-color: #B7D968;
+}
+
+.expectation-block.six-tenths {
+    flex: 0 0 calc(60% - 5px); /* Adjusted for 1000px width */
+    background-color: #68B7D9;
+}
+
+.expectation-block.four-tenths {
+    flex: 0 0 calc(40% - 5px); /* Adjusted for 1000px width */
+    background-color: #D968B7;
+}
+
+.expectation-block.four-five-tenths {
+    flex: 0 0 calc(45% - 5px); /* Adjusted for 1000px width */
+    background-color: #FFA07A;
+}
+
+.expectation-block.five-five-tenths {
+    flex: 0 0 calc(55% - 5px); /* Adjusted for 1000px width */
+    background-color: #20B2AA;
+}
+
+/* Adjustments for responsive behavior */
+@media (max-width: 768px) {
+    .expectation-row {
+        flex-direction: column;
+    }
+    .expectation-block.three-tenths,
+    .expectation-block.seven-tenths {
+        flex: 0 0 100%; /* Stack the blocks on top of each other on smaller screens */
+    }
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
