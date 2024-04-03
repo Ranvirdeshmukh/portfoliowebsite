@@ -19,48 +19,130 @@
     scroll-behavior: smooth; 
   }
 
-  /*********************************** CSS code for the Nav bar *******************************/
+  /*********************************** CSS code for the Nav bar with desktop veiw and the hamburger  *******************************/
   
   #main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
-    background: transparent; 
+    background: transparent;
     color: #333;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    z-index: 10;
-    font-family: 'Source Code Pro', monospace; 
     left: 0;
     width: 100%;
-    transition: background-color 0.3s; /
-}
-
-.logo {
+    transition: background-color 0.3s;
+    z-index: 10;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .logo {
     height: 50px;
-}
-
-.nav-list {
+  }
+  
+  .nav-list {
     list-style: none;
     display: flex;
-}
-
-.nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
     margin: 0 1em;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     color: #9101ff;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.nav-link:hover {
+  }
+  
+  .nav-link:hover {
     color: #f4f4f4;
+  }
+  
+  .nav-toggle {
+    display: none; 
+  }
+  
+  .nav-toggle-label {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    height: 30px; /* Height of the hamburger icon */
+    width: 40px; /* Width of the hamburger icon */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 11;
 }
 
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    display: block;
+    background-color: #9101ff; /* Hamburger icon color */
+    height: 5px; /* Thickness of the dashes */
+    width: 100%; /* Full width of the label */
+    transition: background-color 0.3s ease;
+}
 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    position: absolute;
+    content: '';
+}
+
+.nav-toggle-label span::before {
+    top: -10px;
+}
+
+.nav-toggle-label span::after {
+    top: 10px;
+}
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1em 0;
+    }
+  
+    .nav-item {
+      margin: 1em 0;
+    }
+  
+    .nav-link {
+      color: #fff;
+    }
+  
+    .nav-toggle {
+      display: none; 
+    }
+  
+    .nav-toggle-label {
+      display: block; /* Show the hamburger icon */
+      position: absolute;
+      top: 1em;
+      right: 1em;
+    }
+  
+    #nav-toggle:checked + .nav-toggle-label + .nav-list {
+      display: flex; 
+    }
+  }
+  
 
 /****************************************** Intro Section Styling ****************************************/
 
