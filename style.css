@@ -505,7 +505,7 @@
     margin-top: 10px; /* Or the smallest value needed to achieve the desired spacing */
 }
 
-/*********************************************** Excpectations section ***************************************************************/
+/*********************************************** Excpectations section *********************************************************/
 
 .expectations-section {
     display: flex;
@@ -531,7 +531,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    font-size: 80px;
+    font-size: 75px;
     font-weight: bold;
     margin-bottom: 0.5em;
     letter-spacing: -1.5px;
