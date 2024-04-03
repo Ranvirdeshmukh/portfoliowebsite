@@ -18,6 +18,8 @@
   html {
     scroll-behavior: smooth; 
   }
+
+  /*********************************** CSS code for the Nav bar *******************************/
   
   #main-nav {
     display: flex;
@@ -60,7 +62,8 @@
 
 
 
-/* Intro Section Styling */
+/****************************************** Intro Section Styling ****************************************/
+
 .intro-section {
     display: flex;
     min-height: 100vh;
@@ -116,6 +119,7 @@
     width: max-content;
 } */
 
+/*Took help from youtube to make this css animation possible. */
 
 .typewriter-text {
     overflow: hidden; /* Hides overflow text */
@@ -155,15 +159,13 @@
     text-align: left; /* Text aligned left for content close to the division */
 }
 
-  /* Only apply negative margins if necessary and after evaluating layout */
+
 .left-side header, .right-side header {
     margin-left: 20px; /* Moderately closer to the division */
     margin-right: 20px;
   }
 
-/***************************** Media query for intro section *************************/
-
-
+/**************************************** Media query for intro section ***************************************/
 
 @media only screen and (max-width: 1280px) {
     .intro-section p {
@@ -227,7 +229,7 @@
    
 
   
-/* About Section */
+/********************************************** About Section ******************************************************/
 .about-section {
     display: flex;
     align-items: center; /* Center items vertically */
@@ -335,7 +337,7 @@
 
 
 
-
+/***************************************************** Portfolio Section *************************************************/
 .portfolio-section {
     display: flex;
     flex-direction: column;
@@ -449,15 +451,15 @@
 
 .heading-with-logo {
     text-align: left; /* Align content to the left */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 .meme-me-logo {
-    margin-bottom: 5px; /* Adjust space between the logo and the heading */
-    width: 150px; /* Logo width */
-    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; 
+    width: 150px; 
+    height: auto; 
 }
 
 
@@ -503,6 +505,7 @@
     margin-top: 10px; /* Or the smallest value needed to achieve the desired spacing */
 }
 
+/*********************************************** Excpectations section ***************************************************************/
 
 .expectations-section {
     display: flex;
@@ -671,7 +674,7 @@
 
 
 
-
+/********************************************** Final footer  ********************************************************************/
 
 .main-footer {
     background: #f3f3f3; /* Light gray background from the first snippet */
