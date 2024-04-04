@@ -25,5 +25,4 @@ javascript to enable to the typing effect but i watched some youtube video to ma
 
 ![alt text](<screenshots/Screenshot 2024-04-04 at 12.01.18 AM.png>)
 
-
-![alt text](<screenshots/Screenshot 2024-04-04 at 12.01.25 AM.png>)
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.48.43 AM.png>)
