@@ -283,7 +283,7 @@
     .typewriter-text {
       overflow: hidden;
       white-space: nowrap;
-      display: block; /* Ensure full width */
+      display: block; /*  full width */
       width: 100%; /* Force full width */
       border-right: 0.15em solid black; /* Maintain cursor */
     }

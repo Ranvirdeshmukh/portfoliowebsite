@@ -15,5 +15,15 @@ For me , I think everything in part-1 went well and I am extremely happy to take
 I have done the extra credit by adding a CSS animation to my page of the typewriter's effect. It usually requires
 javascript to enable to the typing effect but i watched some youtube video to mae it work with just CSS. Also, i added animation to of my image sliding in the screen on about page. Also, added a alot of interesting features for the shadow effect on the blocks.
 
-#
 
+# screenshot 
+![alt text](<Screenshot 2024-04-04 at 12.00.41 AM.png>)
+
+![alt text](<Screenshot 2024-04-04 at 12.00.57 AM.png>)
+
+![alt text](<Screenshot 2024-04-04 at 12.01.05 AM.png>)
+
+
+![alt text](<Screenshot 2024-04-04 at 12.01.18 AM.png>)
+
+![alt text](<Screenshot 2024-04-04 at 12.01.25 AM.png>)
