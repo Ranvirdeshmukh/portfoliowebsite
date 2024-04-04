@@ -17,13 +17,13 @@ javascript to enable to the typing effect but i watched some youtube video to ma
 
 
 # screenshot 
-![alt text](<Screenshot 2024-04-04 at 12.00.41 AM.png>)
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.00.41 AM.png>)
 
-![alt text](<Screenshot 2024-04-04 at 12.00.57 AM.png>)
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.00.57 AM.png>)
 
-![alt text](<Screenshot 2024-04-04 at 12.01.05 AM.png>)
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.01.05 AM.png>)
+
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.01.18 AM.png>)
 
 
-![alt text](<Screenshot 2024-04-04 at 12.01.18 AM.png>)
-
-![alt text](<Screenshot 2024-04-04 at 12.01.25 AM.png>)
+![alt text](<screenshots/Screenshot 2024-04-04 at 12.01.25 AM.png>)
